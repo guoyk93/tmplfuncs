@@ -5,13 +5,6 @@ import (
 	"strings"
 )
 
-type MapIterateItem struct {
-	Prefix string
-	Suffix string
-	Key    string
-	Val    string
-}
-
 var Funcs = map[string]interface{}{
 	"stringsContains":   strings.Contains,
 	"stringsFields":     strings.Fields,
