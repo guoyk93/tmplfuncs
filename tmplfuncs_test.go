@@ -94,6 +94,10 @@ func TestFuncs(t *testing.T) {
 			tmpl: `{{ netResolveIPAddr "ip4" "localhost" }}`,
 			ret:  "127.0.0.1",
 		},
+		{
+			tmpl: `{{ k8sStatefulSetID }}`,
+			ret:  "1",
+		},
 	}
 
 	for _, testCase := range testCases {
